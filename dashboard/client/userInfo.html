@@ -1,0 +1,8 @@
+<template name="userInfo">
+	<div class="ui block header">
+		{{#if currentUser}}
+			<img class="miniimage" src="{{currentUser.profile.photo}}" />
+		{{/if}}
+		{{> loginButtons}}
+	</div>
+</template>

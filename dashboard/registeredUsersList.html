@@ -1,0 +1,11 @@
+<template name="registeredUsersList">
+	<div class="ui container header">
+		<i class="calendar icon"></i>
+		RSVPS: {{users.count}}
+	</div>
+	<div class="ui four cards">
+		{{#each users}}
+			{{> user}}
+		{{/each}}
+	</div>
+</template>

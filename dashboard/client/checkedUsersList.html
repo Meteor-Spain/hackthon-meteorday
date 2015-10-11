@@ -1,0 +1,11 @@
+<template name="checkedUsersList">
+	<div class="ui header">
+		<i class="users icon"></i>
+		Checkins: {{checkins.count}}
+	</div>
+	<div class="ui four cards">
+		{{#each checkins}}
+			{{> user user}}
+		{{/each}}
+	</div>
+</template>
